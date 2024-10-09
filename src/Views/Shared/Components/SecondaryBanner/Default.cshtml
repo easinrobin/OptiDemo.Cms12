@@ -1,0 +1,13 @@
+﻿@model SecondaryBanner
+<!-- Sub banner start -->
+<div class="sub-banner" style="background-image: url(@Url.ContentUrl(Model.GetPropertyValue<ContentReference>("Image")));">
+    <div class="container">
+        <div class="breadcrumb-area">
+            <h1>@Model.PageTitle</h1>
+            <ul class="breadcrumbs">
+                <li><a href="/">Home</a></li>
+                <li class="active">@Model.PageTitle</li>
+            </ul>
+        </div>
+    </div>
+</div>

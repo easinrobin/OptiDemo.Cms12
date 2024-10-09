@@ -1,0 +1,19 @@
+﻿@model GeneralPage
+
+<div class="secondery-banner">
+    @Html.PropertyFor(x => x.BlockReference)
+</div>
+
+<div class="content-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-xs-12">
+                <div class="thumbnail blog-box clearfix">
+                    <div class="caption detail">
+                        @Html.PropertyFor(x => x.Body)
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
