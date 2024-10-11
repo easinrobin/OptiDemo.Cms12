@@ -3313,18 +3313,50 @@ a:hover {
     margin-right: 10px;
 }
 
+/** Primary Banner start **/
+
+.primary-banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    height: 80vh;
+}
+
+.title-area {
+    color: #fff;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+    .title-area h1 {
+        margin: 0 0 15px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+/** Primary Banner end **/
+
 /** SUB BANNER AREA START **/
 .sub-banner {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
     position: relative;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .breadcrumb-area {
     color: #fff;
     letter-spacing: 1px;
-    margin: 250px 0 150px;
     text-align: center;
 }
 
@@ -5116,6 +5148,14 @@ a:focus {
 
     .sub-banner h1 {
         font-size: 28px;
+    }
+
+    .primary-banner h1 {
+        font-size: 28px;
+    }
+
+    .primary-banner h3 {
+        font-size: 18px;
     }
 
     .contact-details .media .media-left {

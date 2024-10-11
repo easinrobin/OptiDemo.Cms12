@@ -1,4 +1,9 @@
 ﻿@model HomePage
 
+<div id="primary-banner">
+    @Html.PropertyFor(x => x.BannerImage)
+</div>
 
-<div style="height:200px;">Hellooooooooo</div>
+<div id="our-rooms-section">
+    @Html.PropertyFor(x=>x.BestRoomCards)
+</div>

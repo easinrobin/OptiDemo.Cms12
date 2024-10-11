@@ -1,0 +1,15 @@
+﻿@model BestRoomCards
+
+<div class="content-area hotel-section">
+    <div class="container">
+        <!-- Main title -->
+        <div class="main-title">
+            <h1>
+                @Model.CardTitle
+            </h1>
+        </div>
+        <div class="row">
+            @Html.PropertyFor(x=>x.RoomsLink, new { Tag = "RoomCard" })
+        </div>
+    </div>
+</div>

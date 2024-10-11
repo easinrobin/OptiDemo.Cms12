@@ -4,9 +4,9 @@ using OptiDemo.Cms12.Models.Pages;
 
 namespace OptiDemo.Cms12.Controllers.Pages
 {
-    public class GeneralPageController : PageController<GeneralPage>
+    public class GeneralPageController : PageController<GeneralTextPage>
     {
-        public IActionResult Index(GeneralPage currentPageModel)
+        public IActionResult Index(GeneralTextPage currentPageModel)
         {
             return View(currentPageModel);
         }

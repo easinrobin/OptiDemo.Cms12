@@ -1,0 +1,42 @@
+﻿@model RoomsPage
+
+<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 wow fadeInLeft delay-04s">
+    <!-- Hotel box start -->
+    <div class="hotel-box">
+        <!--header -->
+        <div class="header clearfix">
+            <img src="@Url.ContentUrl(Model.RoomPrimaryImage)" alt="img-6" class="img-responsive">
+        </div>
+        <!-- Detail -->
+        <div class="detail clearfix">
+            <div class="price">
+                @Html.PropertyFor(x => x.RoomRent)<sub>@Html.PropertyFor(x => x.RoomRentUnit)</sub>
+            </div>
+            <h3>
+                <a href="@Url.ContentUrl(Model.ContentLink)">@Model.RoomTitle</a>
+            </h3>
+            <ul class="rating">
+                <li>
+                    <i class="fa fa-star"></i>
+                </li>
+                <li>
+                    <i class="fa fa-star"></i>
+                </li>
+                <li>
+                    <i class="fa fa-star"></i>
+                </li>
+                <li>
+                    <i class="fa fa-star"></i>
+                </li>
+                <li>
+                    <i class="fa fa-star-half-full"></i>
+                </li>
+            </ul>
+            <p>
+                @Html.PropertyFor(x => x.RoomShortDescription)
+            </p>
+            <a href="@Url.ContentUrl(Model.ContentLink)" class="btn button-sm button-theme">View Details</a>
+        </div>
+    </div>
+    <!-- Hotel box end -->
+</div>
